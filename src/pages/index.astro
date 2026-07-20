@@ -1,199 +1,27 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import MainLayout from '@/layouts/MainLayout.astro';
+import HeroSection from '@components/sections/landing/HeroSection.astro';
+import HeroSectionAlt from '@components/sections/landing/HeroSectionAlt.astro';
+import { SITE } from '@data/constants';
 
+const pageTitle = `${SITE.title} — 老板AI化`;
 ---
 
-<Layout title="Rex Wang — AI-Native Boss">
-  <!-- Navigation -->
-  <nav>
-    <div class="logo">Rex Wang</div>
-    <ul class="nav-links">
-      <li><a href="#methodology">方法论</a></li>
-      <li><a href="#opensource">开源</a></li>
-      <li><a href="#courses">课程</a></li>
-      <li><a href="#blog">博客</a></li>
-      <li><a href="/about">关于</a></li>
-    </ul>
-  </nav>
+<MainLayout title={pageTitle}>
+  <HeroSection
+    title={`锻造老板的<span class="text-yellow-500 dark:text-yellow-400">第二大脑</span>`}
+    subTitle="AI是放大器，老板才是发动机。18年品牌定位咨询经验，帮你用AI构建高维盈利体系。"
+    primaryBtn="了解更多"
+    primaryBtnURL="/about"
+    secondaryBtn="阅读博客"
+    secondaryBtnURL="/blog"
+    withReview={false}
+    src="/images/profile/rex1024.png"
+    alt="Rex Wang - 王鹏辉"
+  />
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <div class="hero-badge">🚀 老板AI化 · AI-Native Boss</div>
-      <h1>先改变老板<br/>才能改变企业</h1>
-      <p class="subtitle">18年品牌定位咨询 × AI商业变现<br/>锻造老板第二大脑</p>
-      <p class="tagline">AI不是替代你，是放大你</p>
-      <div class="hero-cta">
-        <a href="#methodology" class="btn btn-primary">探索方法论 →</a>
-        <a href="https://github.com/rexwangai" target="_blank" class="btn btn-secondary">GitHub 开源</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Core Framework -->
-  <section id="framework">
-    <span class="section-label">Core Framework</span>
-    <h2 class="section-title">老板AI化 · 四大支柱</h2>
-    <p class="section-desc">不是教员工用AI工具，是让老板完成认知升级，用AI重构整个企业的决策、运营和增长方式。</p>
-    
-    <div class="card-grid">
-      <div class="card">
-        <div class="card-icon">🧠</div>
-        <h3>六大模式</h3>
-        <p>输入模式、处理模式、输出模式、协作模式、决策模式、进化模式——AI融入企业经营的全链路。</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">⚔️</div>
-        <h3>六脉神剑</h3>
-        <p>人格差异化 → 信任力 → 影响力 → 传播力 → 破圈层 → 护城河。老板IP打造的完整闭环。</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">🔄</div>
-        <h3>输出飞轮</h3>
-        <p>输出 → 反馈 → 补短板 → 再AI化 → 再输出。AI化的终点一定是输出，不输出等于没化。</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">💥</div>
-        <h3>AI核聚变</h3>
-        <p>灵魂（独特人格×定位）+ 身体（AI智能体集群）= 指数爆发。一个人抵100人团队。</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Methodology Detail -->
-  <section id="methodology">
-    <span class="section-label">Methodology</span>
-    <h2 class="section-title">三层方法论</h2>
-    <p class="section-desc">从「化老板」到「化企业」的完整路径——老板觉醒、定位校准、AI重构。</p>
-    
-    <div class="methodology-grid">
-      <div class="method-card">
-        <span class="number">01</span>
-        <h3>老板是发动机</h3>
-        <p>老板是企业一切变革的起点。老板的认知高度，决定了企业的天花板。不改变老板，一切免谈。</p>
-      </div>
-      <div class="method-card">
-        <span class="number">02</span>
-        <h3>定位是方向盘</h3>
-        <p>很多传统企业「卷」，不是不努力，是定位出了问题。AI时代，定位需要重新校准——找到你不可替代的位置。</p>
-      </div>
-      <div class="method-card">
-        <span class="number">03</span>
-        <h3>AI是放大器</h3>
-        <p>AI不是替代你，是放大你已有的能力。老板有了方向，AI帮你10倍效率落地——决策、执行、增长全链路重构。</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Open Source -->
-  <section id="opensource">
-    <span class="section-label">Open Source</span>
-    <h2 class="section-title">开源产品 & Skill</h2>
-    <p class="section-desc">围绕「老板AI化」打造的AI产品和智能体技能，全部开源。用了觉得好，再来付费。</p>
-    
-    <div class="oss-grid">
-      <div class="oss-card">
-        <span class="tag">Methodology</span>
-        <h3>老板AI化方法论</h3>
-        <p>完整方法论 v1.2 开源，含六大模式、六脉神剑、输出飞轮、AI核聚变。CC BY-NC 4.0 协议。</p>
-        <a href="https://github.com/rexwangai/laoban-aihua-methodology" target="_blank" class="link">View on GitHub →</a>
-      </div>
-      <div class="oss-card">
-        <span class="tag">Skill</span>
-        <h3>老板AI化智能体</h3>
-        <p>基于方法论的AI Coach智能体，帮老板完成认知诊断、定位校准、AI化路径规划。</p>
-        <a href="https://github.com/rexwangai" target="_blank" class="link">Coming Soon →</a>
-      </div>
-      <div class="oss-card">
-        <span class="tag">Tool</span>
-        <h3>GEO优化引擎</h3>
-        <p>让AI搜索引擎优先推荐你的内容——GEO（Generative Engine Optimization）策略工具集。</p>
-        <a href="https://github.com/rexwangai" target="_blank" class="link">Coming Soon →</a>
-      </div>
-      <div class="oss-card">
-        <span class="tag">Framework</span>
-        <h3>IP输出飞轮系统</h3>
-        <p>从内容生产到全平台分发的自动化框架，让「输出」成为老板的默认状态。</p>
-        <a href="https://github.com/rexwangai" target="_blank" class="link">Coming Soon →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Courses -->
-  <section id="courses">
-    <span class="section-label">Programs</span>
-    <h2 class="section-title">老板AI化 · 课程体系</h2>
-    <p class="section-desc">从认知觉醒到实战落地，分阶段帮老板完成AI化转型。</p>
-    
-    <div class="course-banner">
-      <h3>8.15-16 杭州·两天实战营</h3>
-      <p>带上你的企业，现场完成AI化路径规划。不是听课，是当场出方案。</p>
-      <a href="https://laobanaihua.com" target="_blank" class="btn btn-primary">了解详情 →</a>
-    </div>
-  </section>
-
-  <!-- Blog -->
-  <section id="blog">
-    <span class="section-label">Blog</span>
-    <h2 class="section-title">最新文章</h2>
-    <p class="section-desc">关于老板AI化、AI商业、品牌定位的思考与实践。</p>
-    
-    <div class="blog-list">
-      <a href="/blog/boss-ai-transformation" class="blog-item">
-        <div class="date">2026-07-18</div>
-        <h3>老板AI化方法论 v1.2 正式发布（开源）</h3>
-        <p>六大模式 + 六脉神剑 + 输出飞轮 + AI核聚变，完整方法论首次公开。</p>
-      </a>
-      <a href="/blog/why-transform-boss-first" class="blog-item">
-        <div class="date">2026-07-15</div>
-        <h3>为什么AI化的第一步是「化老板」？</h3>
-        <p>员工没有战略方向感，老板不带头，企业级AI化根本落不了地。</p>
-      </a>
-      <a href="/blog/ai-is-amplifier" class="blog-item">
-        <div class="date">2026-07-12</div>
-        <h3>AI是放大器，老板才是发动机</h3>
-        <p>AI不是替代你，是放大你已有的能力。方向对了，AI帮你10倍加速。</p>
-      </a>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section id="about">
-    <span class="section-label">About</span>
-    <h2 class="section-title">关于 Rex Wang</h2>
-    
-    <div class="about-card" style="max-width: 800px;">
-      <div class="about-header">
-        <img src="/images/profile/rex1024.png" alt="Rex Wang" class="about-avatar" />
-        <div class="about-info">
-          <h3>王鹏辉 | Rex Wang</h3>
-          <p style="color: var(--accent-light); font-size: 1rem; font-weight: 600; margin: 0.25rem 0;">老板AI化 · 高维盈利体系创始人</p>
-          <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0;">实战派老师，18年品牌定位授课超1000场</p>
-          <div style="display: flex; gap: 0.5rem; margin-top: 0.75rem; flex-wrap: wrap;">
-            <span style="padding: 0.2rem 0.75rem; background: var(--accent-glow); border: 1px solid var(--accent); border-radius: 100px; font-size: 0.8rem; color: var(--accent-light);">18年品牌定位战略顾问</span>
-            <span style="padding: 0.2rem 0.75rem; background: var(--accent-glow); border: 1px solid var(--accent); border-radius: 100px; font-size: 0.8rem; color: var(--accent-light);">AI商业全链路操盘手</span>
-          </div>
-        </div>
-      </div>
-      <p style="color: var(--text); font-size: 1.05rem; line-height: 1.8; margin-top: 1.5rem;">
-        先改变老板，才能改变企业。AI化的终点一定是输出——不输出，等于没化。<br/><br/>
-        2026年，我在做一件事：帮1000个老板完成AI化转型，让他们一个人抵100人团队。<br/><br/>
-        <span style="color: var(--accent-light);">🧠 第二大脑 · 🤲 延伸的手和脚 · 🚀 AI核聚变</span>
-      </p>
-      <p style="margin-top: 1.5rem;">
-        <a href="/about" class="btn btn-primary" style="display: inline-flex;">查看完整介绍 →</a>
-      </p>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="social-links">
-      <a href="https://github.com/rexwangai" target="_blank">GitHub</a>
-      <a href="https://x.com/rexwangai" target="_blank">X / Twitter</a>
-      <a href="https://huggingface.co/rexwangai" target="_blank">HuggingFace</a>
-      <a href="https://laobanaihua.com" target="_blank">laobanaihua.com</a>
-    </div>
-    <p class="copyright">© 2026 Rex Wang. Built with AI, for humans.</p>
-  </footer>
-</Layout>
+  <HeroSectionAlt
+    title="先改变老板，才能改变企业"
+    subTitle="探索老板AI化的方法论、实战案例与行业洞察。从定位战略到AI落地，用系统性思维驱动企业增长。"
+  />
+</MainLayout>

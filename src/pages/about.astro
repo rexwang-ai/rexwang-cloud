@@ -1,455 +1,78 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import MainLayout from '@/layouts/MainLayout.astro';
+import { SITE } from '@data/constants';
+
+const pageTitle = `关于 | ${SITE.title}`;
 ---
 
-<Layout title="关于 Rex Wang — 老板AI化">
-  <!-- Navigation -->
-  <nav>
-    <a href="/" class="logo">Rex Wang</a>
-    <ul class="nav-links">
-      <li><a href="/">← 返回首页</a></li>
-    </ul>
-  </nav>
+<MainLayout title={pageTitle}>
+  <section class="mx-auto max-w-[85rem] px-4 py-14 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-3xl">
+      <h1 class="text-4xl font-bold tracking-tight text-neutral-800 md:text-5xl dark:text-neutral-200">
+        关于 Rex Wang
+      </h1>
+      <p class="mt-4 text-lg text-neutral-600 dark:text-neutral-400">
+        18年品牌定位战略顾问 × AI商业全链路操盘手
+      </p>
 
-  <!-- About Hero -->
-  <section class="about-hero">
-    <div class="about-hero-content">
-      <div class="profile-photo">
-        <img src=/images/profile/rex1024.png alt="Rex Wang — 王鹏辉" />
-      </div>
-      <div class="profile-info">
-        <span class="section-label">About</span>
-        <h1>王鹏辉 <span class="en-name">Rex Wang</span></h1>
-        <p class="profile-title">老板AI化 · 高维盈利体系创始人</p>
-        <p class="profile-tagline">实战派老师，18年品牌定位授课超1000场</p>
-        <div class="profile-tags">
-          <span class="tag">18年品牌定位战略顾问</span>
-          <span class="tag">AI商业全链路操盘手</span>
+      <div class="mt-8 space-y-6 text-neutral-700 dark:text-neutral-300">
+        <div class="rounded-xl bg-white p-6 shadow-sm dark:bg-neutral-800">
+          <h2 class="text-2xl font-bold text-neutral-800 dark:text-neutral-200">
+            🎯 我是谁
+          </h2>
+          <p class="mt-3 leading-relaxed">
+            我叫王鹏辉（Rex Wang），拥有18年品牌定位咨询经验。我相信「先改变老板，才能改变企业」——AI化的核心不是工具，而是老板的认知升级。
+          </p>
+          <p class="mt-3 leading-relaxed">
+            我创立了「老板AI化·高维盈利体系」，帮助企业家用AI构建第二大脑，让AI成为放大器而非替代品。
+          </p>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Core Beliefs -->
-  <section class="beliefs-section">
-    <span class="section-label">独家核心论断</span>
-    <div class="beliefs-grid">
-      <div class="belief-card">
-        <p class="belief-text">先改变老板，才能改变企业；<br/>老板脱胎换骨，企业才能脱胎换骨</p>
-      </div>
-      <div class="belief-card">
-        <p class="belief-text">老板是发动机，定位是方向盘，<br/>AI是放大器</p>
-      </div>
-      <div class="belief-card highlight">
-        <p class="belief-text">碳基智慧 × 硅基执行力 = <br/><strong>AI核聚变</strong></p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Dual Background -->
-  <section>
-    <span class="section-label">双维实战背景</span>
-    <h2 class="section-title">既懂商业本质，又懂AI落地</h2>
-    <p class="section-desc">国内少有的「既懂传统企业经营本质，又懂AI智能商业落地」的实战派导师。</p>
-
-    <div class="dual-grid">
-      <div class="dual-card">
-        <div class="dual-icon">🏢</div>
-        <h3>18年实体经营深耕 · 懂商业本质</h3>
-        <ul>
-          <li>深圳赢想力品牌管理有限公司创始人</li>
-          <li>同济EMBA玄奘商途全维增长导师</li>
-          <li>连续创业者，深耕品牌定位咨询与企业增长培训18年</li>
-          <li>累计服务上千家中小企业</li>
-          <li>2015年出版著作《跨界人生》</li>
-        </ul>
-      </div>
-      <div class="dual-card">
-        <div class="dual-icon">🤖</div>
-        <h3>AI全链路实战能力 · 懂落地方法</h3>
-        <ul>
-          <li>AI商业架构师 / AI产品开发者 / 老板AI化导师</li>
-          <li>独创「短链商业 × 智能体集群 × AI自进化」创业三元论</li>
-          <li>率先提出「中小企业AI转型的核心，是老板AI化」</li>
-          <li>一人跑通「顶层架构→AI产品开发→全平台分发→商业变现」完整闭环</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Transformation Proof -->
-  <section>
-    <span class="section-label">实证标杆</span>
-    <h2 class="section-title">自己就是老板AI化的最佳案例</h2>
-    <p class="section-desc">不是理论，是亲身实践。</p>
-
-    <div class="transform-card">
-      <div class="transform-grid">
-        <div class="transform-before">
-          <h4>AI化转型前</h4>
-          <p>传统品牌咨询公司创始人，核心能力聚焦定位咨询与课程交付，业务边界清晰单一</p>
-        </div>
-        <div class="transform-arrow">
-          <span>核聚变式升级 →</span>
-        </div>
-        <div class="transform-after">
-          <h4>AI化转型后</h4>
-          <ul>
-            <li>融合18年定位积累 + AI能力，全面打破能力与业务边界</li>
-            <li>独立开发行业专属AI模型，打造老板AI化落地工具体系</li>
-            <li>全平台持续内容输出，快速建立行业影响力</li>
-            <li>跨领域多线推进项目，一人完成过去一个团队的工作量</li>
-            <li>公司从单一品牌咨询机构，升级为AI商业科技公司</li>
+        <div class="rounded-xl bg-white p-6 shadow-sm dark:bg-neutral-800">
+          <h2 class="text-2xl font-bold text-neutral-800 dark:text-neutral-200">
+            💡 核心理念
+          </h2>
+          <ul class="mt-3 space-y-2 leading-relaxed">
+            <li>• <strong>AI是放大器，老板才是发动机</strong> — AI不替代决策，而是增强决策者的能力</li>
+            <li>• <strong>先改变老板，再改变企业</strong> — 认知升级先于工具落地</li>
+            <li>• <strong>不做别人已经在做的事</strong> — 专注定义全新品类</li>
+            <li>• <strong>短链商业 × AI智能体集群</strong> — 最小化中间环节，最大化价值传递</li>
           </ul>
         </div>
+
+        <div class="rounded-xl bg-white p-6 shadow-sm dark:bg-neutral-800">
+          <h2 class="text-2xl font-bold text-neutral-800 dark:text-neutral-200">
+            📸 现场风采
+          </h2>
+          <div class="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-3">
+            <img src="/images/events/huichang01.jpg" alt="会场实拍1" class="rounded-lg object-cover aspect-square" />
+            <img src="/images/events/huichang02.jpg" alt="会场实拍2" class="rounded-lg object-cover aspect-square" />
+            <img src="/images/events/huichang03.jpg" alt="会场实拍3" class="rounded-lg object-cover aspect-square" />
+            <img src="/images/events/huichang04.jpg" alt="会场实拍4" class="rounded-lg object-cover aspect-square" />
+            <img src="/images/events/huichang05.jpg" alt="会场实拍5" class="rounded-lg object-cover aspect-square" />
+          </div>
+        </div>
+
+        <div class="rounded-xl bg-white p-6 shadow-sm dark:bg-neutral-800">
+          <h2 class="text-2xl font-bold text-neutral-800 dark:text-neutral-200">
+            🔗 联系方式
+          </h2>
+          <div class="mt-3 space-y-2">
+            <p>
+              <strong>GitHub：</strong>
+              <a href="https://github.com/rexwang-ai" target="_blank" rel="noopener noreferrer" class="text-yellow-600 underline dark:text-yellow-400">
+                github.com/rexwang-ai
+              </a>
+            </p>
+            <p>
+              <strong>X (Twitter)：</strong>
+              <a href="https://x.com/rexwang_ai" target="_blank" rel="noopener noreferrer" class="text-yellow-600 underline dark:text-yellow-400">
+                @rexwang_ai
+              </a>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
-
-  <!-- Event Gallery -->
-  <section>
-    <span class="section-label">Events</span>
-    <h2 class="section-title">实战现场</h2>
-    <p class="section-desc">品牌战略·增长峰会现场</p>
-
-    <div class="gallery-grid">
-      <img src=/images/events/huichang01.jpg alt="品牌战略·增长峰会" class="gallery-img" />
-      <img src=/images/events/huichang02.jpg alt="品牌战略·增长峰会" class="gallery-img" />
-      <img src=/images/events/huichang03.jpg alt="品牌战略·增长峰会" class="gallery-img" />
-      <img src=/images/events/huichang04.jpg alt="品牌战略·增长峰会" class="gallery-img" />
-      <img src=/images/events/huichang05.jpg alt="品牌战略·增长峰会" class="gallery-img" />
-    </div>
-  </section>
-
-  <!-- Mission -->
-  <section class="mission-section">
-    <span class="section-label">Mission</span>
-    <h2 class="section-title">核心使命</h2>
-    <div class="mission-card">
-      <p class="mission-text">带领10万+企业老板走进AI世界，<br/>用「定位升级 + 老板AI化」跳出同质化内卷，<br/>打造极简组织，实现幸福感创业。</p>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="social-links">
-      <a href="/">首页</a>
-      <a href="https://github.com/rexwangai" target="_blank">GitHub</a>
-      <a href="https://x.com/rexwangai" target="_blank">X / Twitter</a>
-      <a href="https://laobanaihua.com" target="_blank">laobanaihua.com</a>
-    </div>
-    <p class="copyright">© 2026 Rex Wang. Built with AI, for humans.</p>
-  </footer>
-
-  <style>
-    /* About Hero */
-    .about-hero {
-      min-height: 60vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 8rem 2rem 4rem;
-    }
-
-    .about-hero-content {
-      display: flex;
-      gap: 3rem;
-      align-items: center;
-      max-width: 900px;
-    }
-
-    .profile-photo {
-      flex-shrink: 0;
-    }
-
-    .profile-photo img {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid var(--accent);
-      box-shadow: 0 0 40px rgba(99, 102, 241, 0.3);
-    }
-
-    .profile-info h1 {
-      font-size: 2.5rem;
-      font-weight: 800;
-      color: #fff;
-      margin-bottom: 0.5rem;
-    }
-
-    .en-name {
-      font-size: 1.2rem;
-      color: var(--text-muted);
-      font-weight: 400;
-      margin-left: 0.5rem;
-    }
-
-    .profile-title {
-      font-size: 1.2rem;
-      color: var(--accent-light);
-      font-weight: 600;
-      margin-bottom: 0.5rem;
-    }
-
-    .profile-tagline {
-      color: var(--text-muted);
-      font-size: 1rem;
-      margin-bottom: 1rem;
-    }
-
-    .profile-tags {
-      display: flex;
-      gap: 0.75rem;
-      flex-wrap: wrap;
-    }
-
-    .tag {
-      padding: 0.35rem 1rem;
-      background: var(--accent-glow);
-      border: 1px solid var(--accent);
-      border-radius: 100px;
-      font-size: 0.85rem;
-      color: var(--accent-light);
-      font-weight: 500;
-    }
-
-    /* Beliefs */
-    .beliefs-section {
-      padding-top: 2rem;
-    }
-
-    .beliefs-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
-      margin-top: 1.5rem;
-    }
-
-    .belief-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 2rem;
-      text-align: center;
-      transition: all 0.3s;
-    }
-
-    .belief-card:hover {
-      border-color: var(--accent);
-      transform: translateY(-2px);
-    }
-
-    .belief-card.highlight {
-      background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(168, 85, 247, 0.1));
-      border-color: var(--accent);
-    }
-
-    .belief-text {
-      font-size: 1.15rem;
-      line-height: 1.8;
-      color: var(--text);
-    }
-
-    /* Dual Grid */
-    .dual-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-      gap: 1.5rem;
-    }
-
-    .dual-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 2rem;
-    }
-
-    .dual-icon {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-
-    .dual-card h3 {
-      font-size: 1.1rem;
-      font-weight: 600;
-      color: #fff;
-      margin-bottom: 1.25rem;
-    }
-
-    .dual-card ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .dual-card li {
-      color: var(--text-muted);
-      font-size: 0.9rem;
-      line-height: 1.6;
-      padding: 0.5rem 0;
-      padding-left: 1.25rem;
-      position: relative;
-    }
-
-    .dual-card li::before {
-      content: '▸';
-      position: absolute;
-      left: 0;
-      color: var(--accent-light);
-    }
-
-    /* Transform */
-    .transform-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 2.5rem;
-    }
-
-    .transform-grid {
-      display: grid;
-      grid-template-columns: 1fr auto 1.5fr;
-      gap: 2rem;
-      align-items: start;
-    }
-
-    .transform-before h4,
-    .transform-after h4 {
-      font-size: 1rem;
-      font-weight: 600;
-      color: var(--text-muted);
-      margin-bottom: 1rem;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-    }
-
-    .transform-before p {
-      color: var(--text-muted);
-      font-size: 0.95rem;
-      line-height: 1.6;
-    }
-
-    .transform-arrow {
-      display: flex;
-      align-items: center;
-      padding-top: 1.5rem;
-    }
-
-    .transform-arrow span {
-      background: var(--gradient-1);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      font-weight: 700;
-      font-size: 0.9rem;
-      white-space: nowrap;
-    }
-
-    .transform-after ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .transform-after li {
-      color: var(--text);
-      font-size: 0.9rem;
-      line-height: 1.6;
-      padding: 0.4rem 0;
-      padding-left: 1.25rem;
-      position: relative;
-    }
-
-    .transform-after li::before {
-      content: '✓';
-      position: absolute;
-      left: 0;
-      color: var(--accent-light);
-      font-weight: 700;
-    }
-
-    /* Gallery */
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1rem;
-    }
-
-    .gallery-img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      border-radius: var(--radius);
-      border: 1px solid var(--border);
-      transition: all 0.3s;
-    }
-
-    .gallery-img:hover {
-      border-color: var(--accent);
-      transform: scale(1.02);
-      box-shadow: 0 8px 30px rgba(99, 102, 241, 0.2);
-    }
-
-    /* Mission */
-    .mission-section {
-      text-align: center;
-    }
-
-    .mission-card {
-      background: linear-gradient(135deg, rgba(99, 102, 241, 0.08), rgba(168, 85, 247, 0.08));
-      border: 1px solid var(--accent);
-      border-radius: var(--radius);
-      padding: 3rem;
-      max-width: 700px;
-      margin: 1.5rem auto 0;
-    }
-
-    .mission-text {
-      font-size: 1.25rem;
-      line-height: 2;
-      color: var(--text);
-      font-weight: 500;
-    }
-
-    /* Responsive */
-    @media (max-width: 768px) {
-      .about-hero {
-        padding: 6rem 1.25rem 3rem;
-      }
-
-      .about-hero-content {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .profile-photo img {
-        width: 150px;
-        height: 150px;
-      }
-
-      .profile-info h1 {
-        font-size: 1.75rem;
-      }
-
-      .profile-tags {
-        justify-content: center;
-      }
-
-      .transform-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .transform-arrow {
-        justify-content: center;
-        padding: 0.5rem 0;
-      }
-
-      .gallery-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .dual-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
-</Layout>
+</MainLayout>

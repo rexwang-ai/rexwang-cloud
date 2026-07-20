@@ -1,0 +1,67 @@
+---
+import MainLayout from '@/layouts/MainLayout.astro';
+import CardBlog from '@components/ui/cards/CardBlog.astro';
+import CardBlogRecent from '@components/ui/cards/CardBlogRecent.astro';
+import { getCollection } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+import { SITE } from '@data/constants';
+
+// Get all blog posts and sort them based on publish date
+const blogEntries = await getCollection('blog');
+
+const blogPosts: CollectionEntry<'blog'>[] = blogEntries.sort(
+  (a: CollectionEntry<'blog'>, b: CollectionEntry<'blog'>) =>
+    b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+
+// Separate the most recent post from others
+const mostRecentPost: CollectionEntry<'blog'> = blogPosts[0];
+const otherPosts: CollectionEntry<'blog'>[] = blogPosts.slice(1);
+
+// Define variables for page content
+const title: string = '博客';
+const subTitle: string =
+  '分享老板AI化的实战思考、行业洞察与方法论。从定位战略到AI落地，帮你构建高维盈利体系。';
+
+const pageTitle: string = `博客 | ${SITE.title}`;
+---
+
+<MainLayout
+  title={pageTitle}
+  customDescription={subTitle}
+  customOgTitle={`博客 | ${SITE.title}`}
+>
+  <section
+    class="mx-auto max-w-[85rem] space-y-8 px-4 pt-16 sm:px-6 lg:px-8 2xl:max-w-full"
+  >
+    {/* Page header */}
+    <div class="mx-auto max-w-3xl text-left sm:text-center">
+      <h1
+        class="block text-4xl font-bold tracking-tight text-balance text-neutral-800 md:text-5xl lg:text-6xl dark:text-neutral-200"
+      >
+        {title}
+      </h1>
+
+      <p
+        class="mt-4 text-lg text-pretty text-neutral-600 dark:text-neutral-400"
+      >
+        {subTitle}
+      </p>
+    </div>
+  </section>
+
+  <section
+    class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 2xl:max-w-full"
+  >
+    {/* Blog posts grid */}
+    <div class="grid gap-6 lg:grid-cols-2">
+      {otherPosts.map(blogEntry => <CardBlog blogEntry={blogEntry} />)}
+    </div>
+  </section>
+  {/* Most recent blog post */}
+  <section
+    class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 2xl:max-w-full"
+  >
+    <CardBlogRecent blogEntry={mostRecentPost} />
+  </section>
+</MainLayout>

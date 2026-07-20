@@ -1,12 +1,21 @@
 import { defineConfig } from 'astro/config';
-import cloudflare from '@astrojs/cloudflare';
+import tailwindcss from '@tailwindcss/vite';
+import sitemap from '@astrojs/sitemap';
+import mdx from '@astrojs/mdx';
 
+// https://astro.build/config
 export default defineConfig({
-  output: 'static',
-  adapter: cloudflare(),
   site: 'https://rexwang.cloud',
-  i18n: {
-    defaultLocale: 'zh',
-    locales: ['zh', 'en'],
+  image: {
+    domains: ['images.unsplash.com'],
+  },
+  prefetch: true,
+  output: 'static',
+  integrations: [
+    sitemap(),
+    mdx(),
+  ],
+  vite: {
+    plugins: [tailwindcss()],
   },
 });
