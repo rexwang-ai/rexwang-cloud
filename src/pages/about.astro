@@ -1,5 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import profilePhoto from '../assets/profile/rex1024.png';
+import event01 from '../assets/events/huichang01.jpg';
+import event02 from '../assets/events/huichang02.jpg';
+import event03 from '../assets/events/huichang03.jpg';
+import event04 from '../assets/events/huichang04.jpg';
+import event05 from '../assets/events/huichang05.jpg';
 ---
 
 <Layout title="关于 Rex Wang — 老板AI化">
@@ -15,7 +21,7 @@ import Layout from '../layouts/Layout.astro';
   <section class="about-hero">
     <div class="about-hero-content">
       <div class="profile-photo">
-        <img src="/images/profile/rex1024.png" alt="Rex Wang — 王鹏辉" />
+        <img src={profilePhoto.src} alt="Rex Wang — 王鹏辉" />
       </div>
       <div class="profile-info">
         <span class="section-label">About</span>
@@ -113,11 +119,11 @@ import Layout from '../layouts/Layout.astro';
     <p class="section-desc">品牌战略·增长峰会现场</p>
 
     <div class="gallery-grid">
-      <img src="/images/events/huichang01.jpg" alt="品牌战略·增长峰会" class="gallery-img" />
-      <img src="/images/events/huichang02.jpg" alt="品牌战略·增长峰会" class="gallery-img" />
-      <img src="/images/events/huichang03.jpg" alt="品牌战略·增长峰会" class="gallery-img" />
-      <img src="/images/events/huichang04.jpg" alt="品牌战略·增长峰会" class="gallery-img" />
-      <img src="/images/events/huichang05.jpg" alt="品牌战略·增长峰会" class="gallery-img" />
+      <img src={event01.src} alt="品牌战略·增长峰会" class="gallery-img" />
+      <img src={event02.src} alt="品牌战略·增长峰会" class="gallery-img" />
+      <img src={event03.src} alt="品牌战略·增长峰会" class="gallery-img" />
+      <img src={event04.src} alt="品牌战略·增长峰会" class="gallery-img" />
+      <img src={event05.src} alt="品牌战略·增长峰会" class="gallery-img" />
     </div>
   </section>
 
