@@ -42,14 +42,10 @@ const statistics = [
 ---
 
 <MainLayout title={pageTitle}>
-  <!-- 1. Hero Section -->
+  <!-- 1. Hero Section (without buttons) -->
   <HeroSection
     title={`Hi There & Welcome to My Corner of the Web!<br /><span class="text-2xl sm:text-3xl lg:text-4xl text-neutral-600 dark:text-neutral-400">你好，欢迎来到我的线上一隅！</span>`}
     subTitle={`我是 Rex Wang，同济 EMBA 特聘导师，身兼品牌定位战略顾问与 AI 商业顾问双重身份。<br />全球老板 AI 化课题发起人、首席研究员，同时搭建了老板 AI 化・高维盈利体系整套实战方法论。<br />深耕品牌定位培训咨询及实体企业经营十八年，累计授课超1000场。<br />以一线实战者的身份担任老板AI化落地导师、AI商业架构设计者、AI 商业化产品开发者，把战略理论转化为可落地的企业 AI 经营方案。<br /><br />我不是教你用工具，是帮你换个脑子——用AI锻造第二大脑，也许它就是你的第二增长曲线。因为老板是发动机，定位是方向盘，AI 是放大器——先改变老板，才能改变企业。我们的终极目标是用AI打造极简组织，把公司做小，把影响力做大，把身心做自由，实现幸福感创业。<br /><br />如果你是创业者、企业老板，可以在这里浏览我的品牌定位、老板AI化、商业变现的观点和方法论，也可以了解我的课程，期待与你交流。<br />欢迎联系我`}
-    primaryBtn="了解更多"
-    primaryBtnURL="/about"
-    secondaryBtn="产品与服务"
-    secondaryBtnURL="/products"
     withReview={false}
     src="/images/profile/rex1024.png"
     alt="Rex Wang - 王鹏辉"
@@ -66,6 +62,19 @@ const statistics = [
       ))}
     </ul>
   </section>
+
+  <!-- 1.6 Action Buttons -->
+  <div class="mx-auto max-w-[85rem] px-4 pb-10 sm:px-6 lg:px-8">
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="/about" class="inline-flex items-center gap-2 rounded-full bg-orange-500 px-6 py-3 text-white font-medium hover:bg-orange-600 transition">
+        了解更多
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+      </a>
+      <a href="/products" class="inline-flex items-center gap-2 rounded-full bg-neutral-700 dark:bg-neutral-600 px-6 py-3 text-white font-medium hover:bg-neutral-800 dark:hover:bg-neutral-500 transition">
+        产品与服务
+      </a>
+    </div>
+  </div>
 
   <!-- 2. Features - 核心方法论 -->
   <FeaturesGeneral
