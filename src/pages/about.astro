@@ -1,29 +1,60 @@
 ---
 import MainLayout from '@/layouts/MainLayout.astro';
-import { SITE } from '@data/constants';
+import { SITE } from '@/data/constants';
 
-const pageTitle = `关于 | ${SITE.title}`;
+const pageTitle = `认识我 | ${SITE.title}`;
 ---
 
 <MainLayout title={pageTitle}>
-  <!-- 顶部主视觉区 -->
-  <section class="mx-auto max-w-[85rem] px-4 py-14 sm:px-6 lg:px-8">
-    <div class="mx-auto max-w-3xl">
-      <h1 class="text-4xl font-bold tracking-tight text-neutral-800 md:text-5xl dark:text-neutral-200">
-        王鹏辉 <span class="text-2xl font-normal text-neutral-500 dark:text-neutral-400">Rex Wang</span>
-      </h1>
-      <ul class="mt-4 space-y-2 text-lg text-neutral-700 dark:text-neutral-300">
-        <li>同济EMBA特聘导师</li>
-        <li>品牌定位战略顾问 × AI 商业顾问</li>
-        <li>全球老板AI化课题发起人 &amp; 首席研究员</li>
-        <li class="font-semibold text-yellow-600 dark:text-yellow-400">老板AI化·高维盈利体系创始人</li>
-        <li>实战派老师，18年品牌定位授课超1000场</li>
-        <li>AI化实战导师，AI商业架构师，AI产品开发者</li>
-      </ul>
+  <!-- ====== Hero: 左文右图 ====== -->
+  <section class="mx-auto max-w-[85rem] px-4 pt-14 pb-10 sm:px-6 lg:px-8">
+    <div class="flex flex-col gap-10 lg:flex-row lg:items-center lg:gap-16">
+      <!-- 左侧：文字 -->
+      <div class="flex-1">
+        <h1 class="text-4xl font-bold tracking-tight text-neutral-800 md:text-5xl dark:text-neutral-200">
+          王鹏辉
+        </h1>
+        <p class="mt-1 text-xl text-neutral-500 dark:text-neutral-400">Rex Wang</p>
+        <ul class="mt-6 space-y-3 text-lg leading-relaxed text-neutral-700 dark:text-neutral-300">
+          <li class="flex items-start gap-2">
+            <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-orange-500"></span>
+            同济EMBA特聘导师
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-orange-500"></span>
+            品牌定位战略顾问 × AI 商业顾问
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-orange-500"></span>
+            全球老板AI化课题发起人 &amp; 首席研究员
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-yellow-500"></span>
+            <strong class="text-yellow-600 dark:text-yellow-400">老板AI化·高维盈利体系创始人</strong>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-orange-500"></span>
+            实战派老师，18年品牌定位授课超1000场
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-orange-500"></span>
+            AI化实战导师，AI商业架构师，AI产品开发者
+          </li>
+        </ul>
+      </div>
+      <!-- 右侧：照片 -->
+      <div class="flex-shrink-0 lg:w-[420px]">
+        <img
+          src="/images/events/huichang02.jpg"
+          alt="老板AI化实战营课程现场"
+          class="w-full rounded-2xl object-cover shadow-lg"
+          loading="eager"
+        />
+      </div>
     </div>
   </section>
 
-  <!-- 核心主张区 -->
+  <!-- ====== 核心论断 ====== -->
   <section class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8">
     <div class="mx-auto max-w-3xl">
       <h2 class="text-2xl font-bold text-neutral-800 dark:text-neutral-200">
@@ -52,62 +83,75 @@ const pageTitle = `关于 | ${SITE.title}`;
     </div>
   </section>
 
-  <!-- 双维实战背景 -->
+  <!-- ====== 双维实战背景 + 课程现场 ====== -->
   <section class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8">
-    <div class="mx-auto max-w-3xl space-y-10">
-      <!-- 18年实体经营深耕 -->
-      <div class="rounded-xl border border-neutral-200 bg-white p-8 shadow-sm dark:border-neutral-700 dark:bg-neutral-800">
-        <h2 class="text-xl font-bold text-neutral-800 dark:text-neutral-100">
-          ■ 18年实体经营深耕 · 懂商业本质
-        </h2>
-        <ul class="mt-4 space-y-3 text-neutral-700 dark:text-neutral-300">
-          <li class="flex items-start gap-2">
-            <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-orange-500"></span>
-            深圳赢想力品牌管理有限公司创始人
-          </li>
-          <li class="flex items-start gap-2">
-            <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-orange-500"></span>
-            同济EMBA玄奘商途全维增长导师
-          </li>
-          <li class="flex items-start gap-2">
-            <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-orange-500"></span>
-            连续创业者，深耕品牌定位咨询与企业增长培训18年，累计服务上千家中小企业
-          </li>
-          <li class="flex items-start gap-2">
-            <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-orange-500"></span>
-            2015年出版著作《跨界人生》
-          </li>
-        </ul>
+    <div class="grid gap-8 lg:grid-cols-3">
+      <!-- 左列：两张背景卡片 -->
+      <div class="space-y-6 lg:col-span-2">
+        <div class="rounded-xl border border-neutral-200 bg-white p-8 shadow-sm dark:border-neutral-700 dark:bg-neutral-800">
+          <h2 class="text-xl font-bold text-neutral-800 dark:text-neutral-100">
+            ■ 18年实体经营深耕 · 懂商业本质
+          </h2>
+          <ul class="mt-4 space-y-3 text-neutral-700 dark:text-neutral-300">
+            <li class="flex items-start gap-2">
+              <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-orange-500"></span>
+              深圳赢想力品牌管理有限公司创始人
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-orange-500"></span>
+              同济EMBA玄奘商途全维增长导师
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-orange-500"></span>
+              连续创业者，深耕品牌定位咨询与企业增长培训18年，累计服务上千家中小企业
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-orange-500"></span>
+              2015年出版著作《跨界人生》
+            </li>
+          </ul>
+        </div>
+
+        <div class="rounded-xl border border-neutral-200 bg-white p-8 shadow-sm dark:border-neutral-700 dark:bg-neutral-800">
+          <h2 class="text-xl font-bold text-neutral-800 dark:text-neutral-100">
+            ■ AI全链路实战能力 · 懂落地方法
+          </h2>
+          <ul class="mt-4 space-y-3 text-neutral-700 dark:text-neutral-300">
+            <li class="flex items-start gap-2">
+              <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-indigo-500"></span>
+              AI商业架构师 / AI产品开发者 / 老板AI化导师
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-indigo-500"></span>
+              国内少有的"既懂传统企业经营本质，又懂AI智能商业落地"的实战派导师
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-indigo-500"></span>
+              独创"短链商业 × 智能体集群 × AI自进化"的AI创业三元论，率先提出"中小企业AI转型的核心，是老板AI化"的行业论断
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-indigo-500"></span>
+              一人跑通"顶层架构设计→AI产品开发→内容全平台分发→商业变现"完整闭环
+            </li>
+          </ul>
+        </div>
       </div>
 
-      <!-- AI全链路实战能力 -->
-      <div class="rounded-xl border border-neutral-200 bg-white p-8 shadow-sm dark:border-neutral-700 dark:bg-neutral-800">
-        <h2 class="text-xl font-bold text-neutral-800 dark:text-neutral-100">
-          ■ AI全链路实战能力 · 懂落地方法
-        </h2>
-        <ul class="mt-4 space-y-3 text-neutral-700 dark:text-neutral-300">
-          <li class="flex items-start gap-2">
-            <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-indigo-500"></span>
-            AI商业架构师 / AI产品开发者 / 老板AI化导师
-          </li>
-          <li class="flex items-start gap-2">
-            <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-indigo-500"></span>
-            国内少有的"既懂传统企业经营本质，又懂AI智能商业落地"的实战派导师
-          </li>
-          <li class="flex items-start gap-2">
-            <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-indigo-500"></span>
-            独创"短链商业 × 智能体集群 × AI自进化"的AI创业三元论，率先提出"中小企业AI转型的核心，是老板AI化"的行业论断
-          </li>
-          <li class="flex items-start gap-2">
-            <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-indigo-500"></span>
-            一人跑通"顶层架构设计→AI产品开发→内容全平台分发→商业变现"完整闭环
-          </li>
-        </ul>
+      <!-- 右列：课程现场照片 -->
+      <div class="flex items-center justify-center">
+        <div class="sticky top-24 w-full overflow-hidden rounded-2xl shadow-lg">
+          <img
+            src="/images/events/huichang02.jpg"
+            alt="老板AI化实战营课程现场"
+            class="h-full w-full object-cover"
+            loading="lazy"
+          />
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- 实证标杆 -->
+  <!-- ====== 实证标杆：转型对比 ====== -->
   <section class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8">
     <div class="mx-auto max-w-3xl">
       <h2 class="text-2xl font-bold text-neutral-800 dark:text-neutral-200">
@@ -147,7 +191,7 @@ const pageTitle = `关于 | ${SITE.title}`;
     </div>
   </section>
 
-  <!-- 底部使命 -->
+  <!-- ====== 底部使命 ====== -->
   <section class="mx-auto max-w-[85rem] px-4 py-14 sm:px-6 lg:px-8">
     <div class="mx-auto max-w-2xl text-center">
       <h2 class="text-2xl font-bold text-neutral-800 md:text-3xl dark:text-neutral-200">
