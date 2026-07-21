@@ -35,9 +35,9 @@ const testimonials = [
 
 const statistics = [
   { count: '18年', description: '品牌定位咨询实战经验' },
-  { count: '1000+', description: '场定位培训授课经历' },
-  { count: '1000+', description: '家中小企业服务案例' },
-  { count: '10万+', description: '企业老板AI化目标覆盖' },
+  { count: '1000+场', description: '定位培训授课经历' },
+  { count: '1000+家', description: '中小企业服务案例' },
+  { count: '10万+', description: '未来实现企业老板AI化目标覆盖' },
 ];
 ---
 
@@ -55,6 +55,18 @@ const statistics = [
     alt="Rex Wang - 王鹏辉"
   />
 
+  <!-- 1.5 Statistics - 数据亮点 -->
+  <section class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8">
+    <ul class="grid grid-cols-2 gap-px overflow-hidden rounded-xl bg-neutral-200 dark:bg-neutral-700 md:grid-cols-4">
+      {statistics.map((stat) => (
+        <li class="bg-white p-6 dark:bg-neutral-800">
+          <div class="text-3xl font-bold text-yellow-600 dark:text-yellow-400">{stat.count}</div>
+          <div class="mt-1 text-sm text-neutral-600 dark:text-neutral-400">{stat.description}</div>
+        </li>
+      ))}
+    </ul>
+  </section>
+
   <!-- 2. Features - 核心方法论 -->
   <FeaturesGeneral
     title="老板AI化·<span class='text-yellow-500 dark:text-yellow-400'>高维盈利体系</span>"
@@ -67,7 +79,6 @@ const statistics = [
     title="老板们的<span class='text-yellow-500 dark:text-yellow-400'>真实反馈</span>"
     subTitle="先改变老板，才能改变企业。听听已经走过这一步的老板怎么说。"
     testimonials={testimonials}
-    statistics={statistics}
   />
 
   <!-- 4. FAQ -->
