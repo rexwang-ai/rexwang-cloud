@@ -1,7 +1,7 @@
 // An array of links for navigation bar
 const navBarLinks = [
   { name: '首页', url: '/' },
-  { name: '关于', url: '/about' },
+  { name: '认识我', url: '/about' },
   { name: '产品', url: '/products' },
   { name: '博客', url: '/blog' },
 ];
