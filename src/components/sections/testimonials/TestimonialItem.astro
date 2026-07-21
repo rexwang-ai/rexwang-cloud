@@ -24,13 +24,19 @@ interface Props {
   <div class="mt-6">
     <div class="flex items-center">
       <div class="shrink-0">
-        <Image
-          class="h-8 w-8 rounded-full"
-          src={avatarSrc}
-          alt="Avatar Description"
-          loading={'eager'}
-          inferSize
-        />
+        {avatarSrc ? (
+          <Image
+            class="h-8 w-8 rounded-full"
+            src={avatarSrc}
+            alt="Avatar Description"
+            loading={'eager'}
+            inferSize
+          />
+        ) : (
+          <div class="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-orange-400 to-yellow-400 text-xs font-bold text-white">
+            {author.charAt(0)}
+          </div>
+        )}
       </div>
       <div class="ms-4 grow">
         <div class="font-bold text-neutral-800 dark:text-neutral-200">
