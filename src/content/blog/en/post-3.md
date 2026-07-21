@@ -2,7 +2,7 @@
 title: "AI是放大器，不是替代品"
 description: "很多人把AI当成替代员工的工具，但真正的价值远不止于此。Rex Wang深度解读：AI的终极价值是让老板成为超级决策者。"
 author: 'Rex Wang'
-authorImage: '@/images/blog/jacob.avif'
+authorImage: '@/images/blog/rex.png'
 authorImageAlt: 'Rex Wang'
 pubDate: 2026-07-20
 cardImage: '@/images/blog/post-3.avif'

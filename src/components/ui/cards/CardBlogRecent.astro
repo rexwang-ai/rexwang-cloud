@@ -44,9 +44,13 @@ interface Props {
           ? `/${recentBlogLocale}/blog/${blogEntry.id.replace(/^fr\//, '')}/`
           : `/blog/${blogEntry.id.replace(/^en\//, '')}/`}
       >
-        {blogEntry.data.description}
+        {blogEntry.data.title}
       </a>
     </h2>
+    {/* Blog description */}
+    <p class="mt-4 text-base leading-relaxed text-neutral-600 dark:text-neutral-400">
+      {blogEntry.data.description}
+    </p>
     {/* Container for the author's avatar and metadata */}
     <div class="mt-6 flex items-center sm:mt-10">
       <AvatarBlogLarge blogEntry={blogEntry} />
@@ -56,7 +60,7 @@ interface Props {
           {blogEntry.data.author}
         </p>
         <p class="text-xs text-neutral-500">
-          {blogEntry.data.role}
+          品牌定位战略顾问 × AI 商业顾问
         </p>
       </div>
     </div>

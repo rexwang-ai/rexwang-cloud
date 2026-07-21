@@ -2,7 +2,7 @@
 title: "老板AI化：从内卷中突围的底层逻辑"
 description: "同质化、价格战、内卷——实体企业的困局根源是什么？Rex Wang用18年实战经验告诉你：AI不是逃离内卷的工具，而是重新定义赛道的武器。"
 author: 'Rex Wang'
-authorImage: '@/images/blog/jacob.avif'
+authorImage: '@/images/blog/rex.png'
 authorImageAlt: 'Rex Wang'
 pubDate: 2026-07-18
 cardImage: '@/images/blog/post-2.avif'

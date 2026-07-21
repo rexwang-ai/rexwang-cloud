@@ -2,7 +2,7 @@
 title: "为什么AI化的第一步是「化老板」"
 description: "AI时代，企业转型的关键不在技术，而在老板的认知升级。18年品牌定位顾问王鹏辉（Rex Wang）深度解析：先改变老板，才能改变企业。"
 author: 'Rex Wang'
-authorImage: '@/images/blog/jacob.avif'
+authorImage: '@/images/blog/rex.png'
 authorImageAlt: 'Rex Wang'
 pubDate: 2026-07-15
 cardImage: '@/images/blog/post-1.avif'
