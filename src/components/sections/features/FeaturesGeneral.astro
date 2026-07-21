@@ -50,7 +50,7 @@ const { title, subTitle, src, alt, features } = Astro.props;
       <h2
         class="text-2xl font-bold text-balance text-neutral-800 md:text-3xl dark:text-neutral-200"
       >
-        {title}
+        <Fragment set:html={title} />
       </h2>
       {/* Rendering subtitle */}
       {

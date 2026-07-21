@@ -2,6 +2,7 @@
 const navBarLinks = [
   { name: '首页', url: '/' },
   { name: '关于', url: '/about' },
+  { name: '产品', url: '/products' },
   { name: '博客', url: '/blog' },
 ];
 // An array of links for footer
