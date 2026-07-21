@@ -1,14 +1,15 @@
 ---
+import { Image } from 'astro:assets';
 import TestimonialItem from './TestimonialItem.astro';
-import StatsGrid from '../../ui/blocks/StatsGrid.astro';
 
-const { title, subTitle, testimonials, statistics } = Astro.props;
+const { title, subTitle, testimonials, imageSrc, imageAlt } = Astro.props;
 
 interface Props {
   title: string;
   subTitle?: string;
   testimonials?: Testimonial[];
-  statistics?: StatProps[];
+  imageSrc?: string;
+  imageAlt?: string;
 }
 
 // TypeScript type for testimonials
@@ -17,12 +18,6 @@ type Testimonial = {
   author: string;
   role: string;
   avatarSrc: string;
-};
-
-// TypeScript type for stats.
-type StatProps = {
-  count: string;
-  description: string;
 };
 ---
 
@@ -33,7 +28,7 @@ type StatProps = {
   <div
     class="lg:grid lg:grid-cols-12 lg:items-center lg:justify-between lg:gap-16"
   >
-    <div class="lg:col-span-5 lg:col-start-1">
+    <div class="lg:col-span-6 lg:col-start-1">
       {/* Title and Subtitle */}
       <div class="mb-8">
         <h2
@@ -48,35 +43,37 @@ type StatProps = {
         }
       </div>
 
-      {
-        /* Generate a blockquote for each testimonial in the testimonials array by mapping over the array. */
-      }
-      {
-        testimonials &&
-          testimonials.map(testimonial => (
-            <TestimonialItem
-              content={testimonial.content}
-              author={testimonial.author}
-              role={testimonial.role}
-              avatarSrc={testimonial.avatarSrc}
-            />
-          ))
-      }
+      {/* Testimonials List */}
+      <div class="space-y-10">
+        {
+          testimonials &&
+            testimonials.map(testimonial => (
+              <TestimonialItem
+                content={testimonial.content}
+                author={testimonial.author}
+                role={testimonial.role}
+                avatarSrc={testimonial.avatarSrc}
+              />
+            ))
+        }
+      </div>
     </div>
+
+    {/* Right Side - Course Image */}
     {
-      statistics && (
+      imageSrc && imageAlt && (
         <div class="mt-10 lg:col-span-6 lg:col-end-13 lg:mt-0">
-          <div class="space-y-6 sm:space-y-8">
-            <ul class="grid grid-cols-2 divide-x-2 divide-y-2 divide-neutral-300 overflow-hidden dark:divide-neutral-700">
-              {/* Generate a list item for each stat in the statistics array by mapping over the array. */}
-              {statistics.map((stat, index) => (
-                <StatsGrid
-                  count={stat.count}
-                  description={stat.description}
-                  index={index}
-                />
-              ))}
-            </ul>
+          <div class="overflow-hidden rounded-2xl">
+            <Image
+              src={imageSrc}
+              alt={imageAlt}
+              width={600}
+              height={800}
+              class="h-full w-full object-cover"
+              draggable={'false'}
+              loading={'lazy'}
+              format={'avif'}
+            />
           </div>
         </div>
       )
