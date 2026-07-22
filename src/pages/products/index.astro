@@ -6,8 +6,9 @@ const pageTitle = `产品与服务 | ${SITE.title}`;
 ---
 
 <MainLayout title={pageTitle}>
-  <!-- Hero -->
-  <section class="mx-auto max-w-[85rem] px-4 py-14 sm:px-6 lg:px-8">
+
+  <!-- ====== Hero ====== -->
+  <section class="mx-auto max-w-[85rem] px-4 pt-14 pb-8 sm:px-6 lg:px-8">
     <div class="mx-auto max-w-3xl text-center">
       <h1 class="text-4xl font-bold tracking-tight text-neutral-800 md:text-5xl dark:text-neutral-200">
         产品与服务<span class="text-yellow-500 dark:text-yellow-400">体系</span>
@@ -18,142 +19,489 @@ const pageTitle = `产品与服务 | ${SITE.title}`;
     </div>
   </section>
 
-  <!-- 课程培训 -->
+  <!-- ====== 课程体系 ====== -->
   <section class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8">
-    <div class="rounded-xl border border-neutral-200 bg-white p-8 shadow-sm dark:border-neutral-700 dark:bg-neutral-800 lg:p-10">
-      <div class="grid gap-8 lg:grid-cols-2 lg:items-start">
-        <div>
-          <h2 class="text-2xl font-bold text-neutral-800 dark:text-neutral-100">课程培训</h2>
-          <p class="mt-2 text-neutral-600 dark:text-neutral-400">从入门到精通的学习路径，系统掌握老板AI化方法论</p>
+    <div class="mb-8 text-center">
+      <span class="inline-block rounded-full bg-orange-100 px-4 py-1.5 text-sm font-bold text-orange-600 dark:bg-orange-900/30 dark:text-orange-400">课程体系</span>
+      <h2 class="mt-3 text-2xl font-bold text-neutral-800 dark:text-neutral-200">从破局到传承，阶梯式成长路径</h2>
+    </div>
+
+    <div class="grid gap-8 lg:grid-cols-3">
+
+      <!-- 实战营 -->
+      <div class="group relative flex flex-col overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-sm transition hover:shadow-lg dark:border-neutral-700 dark:bg-neutral-800">
+        <div class="bg-gradient-to-r from-orange-500 to-yellow-500 px-6 py-4">
+          <span class="text-xs font-bold uppercase tracking-wider text-orange-100">Step 01</span>
+          <h3 class="mt-1 text-xl font-bold text-white">老板AI化破局增长实战营</h3>
+          <p class="mt-1 text-sm text-orange-100">2天1夜 · 线下实战</p>
         </div>
-        <div class="space-y-4">
-          <div class="flex items-baseline justify-between border-b border-dashed border-neutral-200 pb-3 dark:border-neutral-600">
-            <div>
-              <div class="font-bold text-neutral-800 dark:text-neutral-100">引流体验课</div>
-              <div class="text-sm text-neutral-500 dark:text-neutral-400">快速了解老板AI化核心框架</div>
-            </div>
-            <span class="font-bold text-lg text-neutral-800 dark:text-neutral-100">¥19.9</span>
+        <div class="flex flex-1 flex-col p-6">
+          <div class="mb-4">
+            <div class="text-xs font-bold uppercase tracking-wider text-neutral-400 dark:text-neutral-500">解决什么问题？</div>
+            <ul class="mt-2 space-y-1.5 text-sm text-neutral-700 dark:text-neutral-300">
+              <li class="flex items-start gap-2">
+                <span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-orange-400"></span>
+                知道AI重要，但不知道怎么用到自己生意里
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-orange-400"></span>
+                陷入同质化竞争、价格战，找不到破局方向
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-orange-400"></span>
+                想打造个人IP、建获客系统，不知从何开始
+              </li>
+            </ul>
           </div>
-          <div class="flex items-baseline justify-between border-b border-dashed border-neutral-200 pb-3 dark:border-neutral-600">
-            <div>
-              <div class="font-bold text-neutral-800 dark:text-neutral-100">线上系统课</div>
-              <div class="text-sm text-neutral-500 dark:text-neutral-400">完整方法论 + 实操案例</div>
-            </div>
-            <span class="font-bold text-lg text-neutral-800 dark:text-neutral-100">¥2,980</span>
+          <div class="mb-4">
+            <div class="text-xs font-bold uppercase tracking-wider text-neutral-400 dark:text-neutral-500">学完带走什么？</div>
+            <ul class="mt-2 space-y-1.5 text-sm text-neutral-700 dark:text-neutral-300">
+              <li class="flex items-start gap-2">
+                <span class="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-orange-100 text-xs font-bold text-orange-600">1</span>
+                企业专属 AI 定位诊断报告
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-orange-100 text-xs font-bold text-orange-600">2</span>
+                个人 IP 内容生产系统（定位+模板+提示词库）
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-orange-100 text-xs font-bold text-orange-600">3</span>
+                AI 获客工具包（客户画像+内容模板+话术库）
+              </li>
+            </ul>
           </div>
-          <div class="flex items-baseline justify-between border-b border-dashed border-neutral-200 pb-3 dark:border-neutral-600">
-            <div>
-              <div class="font-bold text-neutral-800 dark:text-neutral-100">线下实战营</div>
-              <div class="text-sm text-neutral-500 dark:text-neutral-400">面对面深度训练，现场出方案</div>
-            </div>
-            <span class="font-bold text-lg text-neutral-800 dark:text-neutral-100">¥39,800</span>
+          <div class="mt-auto rounded-lg bg-neutral-50 p-3 dark:bg-neutral-700/50">
+            <p class="text-xs leading-relaxed text-neutral-500 dark:text-neutral-400">
+              <strong class="text-neutral-700 dark:text-neutral-300">核心理念：</strong>先改变老板，才能改变企业。不是教团队用AI工具，而是帮老板自己先成为AI的深度用户。
+            </p>
           </div>
-          <div class="flex items-baseline justify-between">
-            <div>
-              <div class="font-bold text-neutral-800 dark:text-neutral-100">1对1私教</div>
-              <div class="text-sm text-neutral-500 dark:text-neutral-400">针对性辅导，加速落地</div>
+        </div>
+      </div>
+
+      <!-- 陪跑营 -->
+      <div class="group relative flex flex-col overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-sm transition hover:shadow-lg dark:border-neutral-700 dark:bg-neutral-800">
+        <div class="bg-gradient-to-r from-indigo-500 to-blue-500 px-6 py-4">
+          <span class="text-xs font-bold uppercase tracking-wider text-indigo-100">Step 02</span>
+          <h3 class="mt-1 text-xl font-bold text-white">老板AI化落地陪跑营</h3>
+          <p class="mt-1 text-sm text-indigo-100">60天线上陪跑 + 2天线下集训</p>
+        </div>
+        <div class="flex flex-1 flex-col p-6">
+          <div class="mb-4">
+            <div class="text-xs font-bold uppercase tracking-wider text-neutral-400 dark:text-neutral-500">解决什么问题？</div>
+            <ul class="mt-2 space-y-1.5 text-sm text-neutral-700 dark:text-neutral-300">
+              <li class="flex items-start gap-2">
+                <span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-indigo-400"></span>
+                实战营学完方向看清了，但自己落地太慢、容易走偏
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-indigo-400"></span>
+                遇到问题没人随时指导，做着做着就停了
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-indigo-400"></span>
+                想建立完整的AI获客系统，而不只是带走模板
+              </li>
+            </ul>
+          </div>
+          <div class="mb-4">
+            <div class="text-xs font-bold uppercase tracking-wider text-neutral-400 dark:text-neutral-500">60天后的成果</div>
+            <ul class="mt-2 space-y-1.5 text-sm text-neutral-700 dark:text-neutral-300">
+              <li class="flex items-start gap-2">
+                <span class="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-indigo-100 text-xs font-bold text-indigo-600">1</span>
+                跑通的 AI 定位系统——持续迭代、持续验证
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-indigo-100 text-xs font-bold text-indigo-600">2</span>
+                跑通的内容获客系统——稳定产出、稳定转化
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-indigo-100 text-xs font-bold text-indigo-600">3</span>
+                跑通的 AI 工作流——融入日常、形成习惯
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-indigo-100 text-xs font-bold text-indigo-600">4</span>
+                一套可复制的团队 AI 化方案
+              </li>
+            </ul>
+          </div>
+          <div class="mt-auto rounded-lg bg-neutral-50 p-3 dark:bg-neutral-700/50">
+            <p class="text-xs leading-relaxed text-neutral-500 dark:text-neutral-400">
+              <strong class="text-neutral-700 dark:text-neutral-300">核心承诺：</strong>不是听课，是真用；不是模板，是你自己的系统；不是学完就走，是跑到出结果。
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 弟子班 -->
+      <div class="group relative flex flex-col overflow-hidden rounded-2xl border-2 border-yellow-400 bg-white shadow-sm transition hover:shadow-lg dark:border-yellow-500 dark:bg-neutral-800">
+        <div class="absolute -top-0 right-6 rounded-b-lg bg-yellow-400 px-3 py-1 text-xs font-bold text-yellow-900">限招</div>
+        <div class="bg-gradient-to-r from-yellow-500 to-amber-500 px-6 py-4">
+          <span class="text-xs font-bold uppercase tracking-wider text-yellow-100">Step 03</span>
+          <h3 class="mt-1 text-xl font-bold text-white">弟子班（深度传承课）</h3>
+          <p class="mt-1 text-sm text-yellow-100">长期师徒制 · 行业合伙人 · 每行业仅1-2人</p>
+        </div>
+        <div class="flex flex-1 flex-col p-6">
+          <div class="mb-4">
+            <div class="text-xs font-bold uppercase tracking-wider text-neutral-400 dark:text-neutral-500">解决什么问题？</div>
+            <ul class="mt-2 space-y-1.5 text-sm text-neutral-700 dark:text-neutral-300">
+              <li class="flex items-start gap-2">
+                <span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-yellow-400"></span>
+                陪跑营结束后想更深入，想在行业里成为AI标杆
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-yellow-400"></span>
+                想获得18年品牌定位经验的核心传承
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-yellow-400"></span>
+                想获得持续发展的商业模式，不只是个人成长
+              </li>
+            </ul>
+          </div>
+          <div class="mb-4">
+            <div class="text-xs font-bold uppercase tracking-wider text-neutral-400 dark:text-neutral-500">弟子班给你什么？</div>
+            <ul class="mt-2 space-y-1.5 text-sm text-neutral-700 dark:text-neutral-300">
+              <li class="flex items-start gap-2">
+                <span class="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-yellow-100 text-xs font-bold text-yellow-700">1</span>
+                讲师培养——能独立开沙龙、讲实战营核心模块
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-yellow-100 text-xs font-bold text-yellow-700">2</span>
+                18年经验传承——师徒制，关键决策一对一指导
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-yellow-100 text-xs font-bold text-yellow-700">3</span>
+                行业合伙人身份——共同开发本地市场
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-yellow-100 text-xs font-bold text-yellow-700">4</span>
+                私董会圈层 + 品牌背书 + 终身学习权益
+              </li>
+            </ul>
+          </div>
+          <div class="mt-auto rounded-lg bg-yellow-50 p-3 dark:bg-yellow-900/20">
+            <p class="text-xs leading-relaxed text-yellow-700 dark:text-yellow-300">
+              <strong>一句话总结：</strong>陪跑营教你用AI，弟子班把你变成行业内用AI最厉害的那个人——能讲、能教、有圈子、有品牌背书。
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====== 老板在线 Boss AI ====== -->
+  <section class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8">
+    <div class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#FF512F] to-[#F09819] p-8 shadow-xl lg:p-12">
+      <!-- 装饰元素 -->
+      <div class="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-white/10"></div>
+      <div class="absolute -bottom-8 -left-8 h-32 w-32 rounded-full bg-white/10"></div>
+
+      <div class="relative z-10">
+        <div class="mb-6">
+          <span class="inline-block rounded-full bg-white/20 px-4 py-1.5 text-sm font-bold text-white">AI 数字分身</span>
+          <h2 class="mt-3 text-3xl font-bold text-white">老板在线（Boss AI）</h2>
+          <p class="mt-2 text-lg text-orange-100">老板的 AI 数字分身 · 24小时智能获客引擎</p>
+        </div>
+
+        <div class="grid gap-8 lg:grid-cols-2">
+          <!-- 左侧：痛点 + 是什么 -->
+          <div>
+            <div class="mb-6">
+              <div class="text-xs font-bold uppercase tracking-wider text-orange-200">解决什么问题？</div>
+              <ul class="mt-2 space-y-2 text-sm text-white/90">
+                <li class="flex items-start gap-2">
+                  <span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-white/60"></span>
+                  各平台做了大量内容，但没有统一的"根据地"承接流量
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-white/60"></span>
+                  传统企业官网建完就过时，没人看、没转化
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-white/60"></span>
+                  想让客户了解你，但时间不够用，无法一一沟通
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-white/60"></span>
+                  想打造一个24小时在线的"自己"，持续获客、持续建立信任
+                </li>
+              </ul>
             </div>
-            <span class="font-bold text-lg text-indigo-600 dark:text-indigo-400">¥98,000</span>
+
+            <div class="rounded-xl bg-white/15 p-5 backdrop-blur-sm">
+              <div class="text-sm font-bold text-white">五大功能模块</div>
+              <div class="mt-3 grid grid-cols-1 gap-2 sm:grid-cols-2">
+                <div class="flex items-center gap-2 text-sm text-white/90">
+                  <span class="text-base">🎙️</span> 黄金圈声音区
+                </div>
+                <div class="flex items-center gap-2 text-sm text-white/90">
+                  <span class="text-base">📝</span> 观点与洞察
+                </div>
+                <div class="flex items-center gap-2 text-sm text-white/90">
+                  <span class="text-base">🤖</span> AI Bot 交互
+                </div>
+                <div class="flex items-center gap-2 text-sm text-white/90">
+                  <span class="text-base">📊</span> 活内容层
+                </div>
+                <div class="flex items-center gap-2 text-sm text-white/90">
+                  <span class="text-base">💰</span> 产品与转化
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 右侧：对比表 + 版本 -->
+          <div>
+            <div class="mb-6 overflow-hidden rounded-xl bg-white/10">
+              <table class="w-full text-sm">
+                <thead>
+                  <tr class="border-b border-white/20 text-left">
+                    <th class="px-4 py-3 font-bold text-orange-200">传统官网</th>
+                    <th class="px-4 py-3 font-bold text-white">老板在线</th>
+                  </tr>
+                </thead>
+                <tbody class="text-white/80">
+                  <tr class="border-b border-white/10">
+                    <td class="px-4 py-2.5">围绕公司建站</td>
+                    <td class="px-4 py-2.5 font-medium text-white">围绕老板建站</td>
+                  </tr>
+                  <tr class="border-b border-white/10">
+                    <td class="px-4 py-2.5">展示型电子名片</td>
+                    <td class="px-4 py-2.5 font-medium text-white">交互式AI获客引擎</td>
+                  </tr>
+                  <tr class="border-b border-white/10">
+                    <td class="px-4 py-2.5">静态内容等人来看</td>
+                    <td class="px-4 py-2.5 font-medium text-white">AI主动交互、主动说服</td>
+                  </tr>
+                  <tr class="border-b border-white/10">
+                    <td class="px-4 py-2.5">建完就过时</td>
+                    <td class="px-4 py-2.5 font-medium text-white">活的内容，持续进化</td>
+                  </tr>
+                  <tr>
+                    <td class="px-4 py-2.5">一个页面</td>
+                    <td class="px-4 py-2.5 font-medium text-white">一个系统</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="space-y-3">
+              <div class="flex items-center gap-3 rounded-lg bg-white/15 px-4 py-3 backdrop-blur-sm">
+                <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-white/30 text-xs font-bold text-white">标</span>
+                <div>
+                  <div class="text-sm font-bold text-white">标准版</div>
+                  <div class="text-xs text-orange-100">快速上线AI获客站</div>
+                </div>
+              </div>
+              <div class="flex items-center gap-3 rounded-lg bg-white/25 px-4 py-3 ring-2 ring-white/40 backdrop-blur-sm">
+                <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-white text-xs font-bold text-orange-600">专</span>
+                <div class="flex-1">
+                  <div class="text-sm font-bold text-white">专业版 <span class="ml-1 rounded bg-white/30 px-1.5 py-0.5 text-xs text-white">推荐</span></div>
+                  <div class="text-xs text-orange-100">深度定制 + 活内容层</div>
+                </div>
+              </div>
+              <div class="flex items-center gap-3 rounded-lg bg-white/15 px-4 py-3 backdrop-blur-sm">
+                <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-white/30 text-xs font-bold text-white">旗</span>
+                <div>
+                  <div class="text-sm font-bold text-white">旗舰版</div>
+                  <div class="text-xs text-orange-100">全功能 + 定制交互 + 年度陪跑</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 老板在线 -->
+  <!-- ====== 项目全案 ====== -->
   <section class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8">
-    <div class="relative overflow-hidden rounded-xl bg-gradient-to-tr from-[#FF512F] to-[#F09819] p-8 shadow-xl lg:p-10">
-      <div class="absolute -top-3 right-6 rounded-full bg-white px-4 py-1 text-sm font-bold text-orange-600 shadow">推荐</div>
-      <div class="grid gap-8 lg:grid-cols-2 lg:items-start">
-        <div>
-          <h2 class="text-2xl font-bold text-white">老板在线</h2>
-          <p class="mt-2 text-orange-100">24小时AI数字分身，你的在线商业顾问</p>
-          <p class="mt-4 text-sm text-orange-100/80 leading-relaxed">
-            声音克隆 + 黄金圈内容 + AI Bot交互 = 老板24h数字分身<br />
-            围绕老板建站，不是围绕公司建站。让你的认知和经验，24小时在线服务客户。
-          </p>
+    <div class="overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-sm dark:border-neutral-700 dark:bg-neutral-800">
+      <div class="grid gap-0 lg:grid-cols-5">
+        <!-- 左侧：介绍 -->
+        <div class="flex flex-col justify-center bg-gradient-to-br from-neutral-900 to-neutral-800 p-8 text-white lg:col-span-2 lg:p-10">
+          <span class="inline-block w-fit rounded-full bg-white/20 px-4 py-1.5 text-sm font-bold text-white">企业级定制</span>
+          <h2 class="mt-4 text-2xl font-bold">项目全案</h2>
+          <p class="mt-1 text-sm text-neutral-400">企业级 AI 化系统定制 · 每个行业仅服务首家企业</p>
+          <div class="mt-6 space-y-3 text-sm text-neutral-300">
+            <div class="text-xs font-bold uppercase tracking-wider text-neutral-500">解决什么问题？</div>
+            <ul class="space-y-2">
+              <li class="flex items-start gap-2">
+                <span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-yellow-400"></span>
+                企业需要系统化的AI改造，不是老板一个人会用就行
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-yellow-400"></span>
+                需要从品牌定位到AI落地的全链路方案
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-yellow-400"></span>
+                需要一个真正懂"定位×AI"的团队来操刀
+              </li>
+            </ul>
+          </div>
+          <div class="mt-6 rounded-lg bg-white/10 p-4 text-xs text-neutral-400">
+            <strong class="text-neutral-200">我们的原则：</strong>只输出策划方案，不代运营。轻交付，模块化搭建。帮你搭好系统，你的团队自己跑。
+          </div>
         </div>
-        <div class="space-y-4">
-          <div class="flex items-baseline justify-between border-b border-dashed border-orange-300/40 pb-3">
-            <div>
-              <div class="font-bold text-white">基础版</div>
-              <div class="text-sm text-orange-100">AI Bot + 品牌内容</div>
+        <!-- 右侧：覆盖内容 + 三档方案 -->
+        <div class="p-8 lg:col-span-3 lg:p-10">
+          <div class="mb-6">
+            <div class="text-xs font-bold uppercase tracking-wider text-neutral-400 dark:text-neutral-500">项目全案覆盖什么？</div>
+            <div class="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2">
+              <div class="flex items-center gap-2 text-sm text-neutral-700 dark:text-neutral-300">
+                <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded bg-neutral-100 text-xs font-bold text-neutral-600 dark:bg-neutral-700 dark:text-neutral-300">定</span>
+                品牌定位升级
+              </div>
+              <div class="flex items-center gap-2 text-sm text-neutral-700 dark:text-neutral-300">
+                <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded bg-neutral-100 text-xs font-bold text-neutral-600 dark:bg-neutral-700 dark:text-neutral-300">策</span>
+                AI化战略架构
+              </div>
+              <div class="flex items-center gap-2 text-sm text-neutral-700 dark:text-neutral-300">
+                <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded bg-neutral-100 text-xs font-bold text-neutral-600 dark:bg-neutral-700 dark:text-neutral-300">智</span>
+                智能体集群搭建
+              </div>
+              <div class="flex items-center gap-2 text-sm text-neutral-700 dark:text-neutral-300">
+                <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded bg-neutral-100 text-xs font-bold text-neutral-600 dark:bg-neutral-700 dark:text-neutral-300">内</span>
+                内容全平台分发
+              </div>
+              <div class="flex items-center gap-2 text-sm text-neutral-700 dark:text-neutral-300 sm:col-span-2">
+                <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded bg-neutral-100 text-xs font-bold text-neutral-600 dark:bg-neutral-700 dark:text-neutral-300">变</span>
+                商业变现设计——从获客到转化到复购的完整闭环
+              </div>
             </div>
-            <span class="font-bold text-lg text-white">¥39,800</span>
           </div>
-          <div class="flex items-baseline justify-between border-b border-dashed border-orange-300/40 pb-3">
-            <div>
-              <div class="font-bold text-white">专业版</div>
-              <div class="text-sm text-orange-100">+ 声音克隆 + 全平台分发</div>
+
+          <div>
+            <div class="text-xs font-bold uppercase tracking-wider text-neutral-400 dark:text-neutral-500">三档方案</div>
+            <div class="mt-3 space-y-3">
+              <div class="flex items-start gap-3 rounded-lg border border-neutral-200 p-4 dark:border-neutral-600">
+                <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-neutral-100 text-xs font-bold text-neutral-600 dark:bg-neutral-700 dark:text-neutral-300">基</span>
+                <div>
+                  <div class="text-sm font-bold text-neutral-800 dark:text-neutral-100">基础版</div>
+                  <div class="text-xs text-neutral-500 dark:text-neutral-400">定位升级 + AI化基础架构</div>
+                </div>
+              </div>
+              <div class="flex items-start gap-3 rounded-lg border border-neutral-200 p-4 dark:border-neutral-600">
+                <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-indigo-100 text-xs font-bold text-indigo-600 dark:bg-indigo-900/30 dark:text-indigo-400">升</span>
+                <div>
+                  <div class="text-sm font-bold text-neutral-800 dark:text-neutral-100">升级版</div>
+                  <div class="text-xs text-neutral-500 dark:text-neutral-400">基础版 + 智能体集群 + 内容飞轮</div>
+                </div>
+              </div>
+              <div class="flex items-start gap-3 rounded-lg border-2 border-yellow-400 p-4 dark:border-yellow-500">
+                <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-yellow-100 text-xs font-bold text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-400">旗</span>
+                <div>
+                  <div class="text-sm font-bold text-neutral-800 dark:text-neutral-100">旗舰版</div>
+                  <div class="text-xs text-neutral-500 dark:text-neutral-400">升级版 + 全域商业闭环</div>
+                </div>
+              </div>
             </div>
-            <span class="font-bold text-lg text-white">¥68,000</span>
-          </div>
-          <div class="flex items-baseline justify-between">
-            <div>
-              <div class="font-bold text-white">旗舰版</div>
-              <div class="text-sm text-orange-100">+ 全链路商业闭环</div>
-            </div>
-            <span class="font-bold text-lg text-yellow-200">¥128,000</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 项目全案 -->
+  <!-- ====== 学习路径 ====== -->
   <section class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8">
-    <div class="rounded-xl border border-neutral-200 bg-white p-8 shadow-sm dark:border-neutral-700 dark:bg-neutral-800 lg:p-10">
-      <div class="grid gap-8 lg:grid-cols-2 lg:items-start">
-        <div>
-          <h2 class="text-2xl font-bold text-neutral-800 dark:text-neutral-100">项目全案</h2>
-          <p class="mt-2 text-neutral-600 dark:text-neutral-400">定制化AI商业落地方案</p>
-          <p class="mt-4 text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed">
-            只输出策划方案，不代运营。轻交付，模块化搭建。<br />
-            从顶层架构设计到AI产品开发，从内容全平台分发到商业变现，跑通完整闭环。
-          </p>
+    <div class="mx-auto max-w-3xl">
+      <div class="mb-6 text-center">
+        <span class="inline-block rounded-full bg-indigo-100 px-4 py-1.5 text-sm font-bold text-indigo-600 dark:bg-indigo-900/30 dark:text-indigo-400">学习路径</span>
+        <h2 class="mt-3 text-2xl font-bold text-neutral-800 dark:text-neutral-200">找到适合你的起点</h2>
+      </div>
+
+      <div class="flex flex-col items-center gap-0">
+        <!-- 思享会 -->
+        <div class="w-full rounded-xl border border-neutral-200 bg-white p-5 shadow-sm dark:border-neutral-700 dark:bg-neutral-800">
+          <div class="flex items-center gap-3">
+            <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-green-100 text-lg">🤝</span>
+            <div>
+              <div class="font-bold text-neutral-800 dark:text-neutral-100">思享会</div>
+              <div class="text-sm text-neutral-500 dark:text-neutral-400">半天免费沙龙 · 找到方向</div>
+            </div>
+          </div>
         </div>
-        <div class="space-y-4">
-          <div class="flex items-baseline justify-between border-b border-dashed border-neutral-200 pb-3 dark:border-neutral-600">
+        <!-- 箭头 -->
+        <div class="flex h-8 items-center text-neutral-300 dark:text-neutral-600">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+        </div>
+        <!-- 实战营 -->
+        <div class="w-full rounded-xl border border-neutral-200 bg-white p-5 shadow-sm dark:border-neutral-700 dark:bg-neutral-800">
+          <div class="flex items-center gap-3">
+            <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-orange-100 text-lg">⚡</span>
             <div>
-              <div class="font-bold text-neutral-800 dark:text-neutral-100">标准全案</div>
-              <div class="text-sm text-neutral-500 dark:text-neutral-400">定位升级 + AI化基础架构</div>
+              <div class="font-bold text-neutral-800 dark:text-neutral-100">实战营</div>
+              <div class="text-sm text-neutral-500 dark:text-neutral-400">2天破局 · 带走系统</div>
             </div>
-            <span class="font-bold text-lg text-neutral-800 dark:text-neutral-100">¥168,000</span>
           </div>
-          <div class="flex items-baseline justify-between border-b border-dashed border-neutral-200 pb-3 dark:border-neutral-600">
+        </div>
+        <!-- 箭头 -->
+        <div class="flex h-8 items-center text-neutral-300 dark:text-neutral-600">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+        </div>
+        <!-- 陪跑营 -->
+        <div class="w-full rounded-xl border border-neutral-200 bg-white p-5 shadow-sm dark:border-neutral-700 dark:bg-neutral-800">
+          <div class="flex items-center gap-3">
+            <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-indigo-100 text-lg">🏃</span>
             <div>
-              <div class="font-bold text-neutral-800 dark:text-neutral-100">深度全案</div>
-              <div class="text-sm text-neutral-500 dark:text-neutral-400">+ 智能体集群 + 内容飞轮</div>
+              <div class="font-bold text-neutral-800 dark:text-neutral-100">陪跑营</div>
+              <div class="text-sm text-neutral-500 dark:text-neutral-400">60天落地 · 跑出结果</div>
             </div>
-            <span class="font-bold text-lg text-neutral-800 dark:text-neutral-100">¥238,000</span>
           </div>
-          <div class="flex items-baseline justify-between">
+        </div>
+        <!-- 箭头 -->
+        <div class="flex h-8 items-center text-neutral-300 dark:text-neutral-600">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+        </div>
+        <!-- 弟子班 -->
+        <div class="w-full rounded-xl border-2 border-yellow-400 bg-white p-5 shadow-sm dark:border-yellow-500 dark:bg-neutral-800">
+          <div class="flex items-center gap-3">
+            <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-yellow-100 text-lg">👑</span>
             <div>
-              <div class="font-bold text-neutral-800 dark:text-neutral-100">战略全案</div>
-              <div class="text-sm text-neutral-500 dark:text-neutral-400">+ 全域商业闭环</div>
+              <div class="font-bold text-neutral-800 dark:text-neutral-100">弟子班</div>
+              <div class="text-sm text-neutral-500 dark:text-neutral-400">长期传承 · 成为行业KOL</div>
             </div>
-            <span class="font-bold text-lg text-indigo-600 dark:text-indigo-400">¥360,000</span>
+          </div>
+        </div>
+        <!-- 箭头 -->
+        <div class="flex h-8 items-center text-neutral-300 dark:text-neutral-600">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+        </div>
+        <!-- 老板在线 + 项目全案 -->
+        <div class="w-full rounded-xl bg-gradient-to-r from-[#FF512F] to-[#F09819] p-5 text-white shadow-lg">
+          <div class="flex items-center gap-3">
+            <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white/20 text-lg">🚀</span>
+            <div>
+              <div class="font-bold">老板在线 + 项目全案</div>
+              <div class="text-sm text-orange-100">企业级AI化 · 全链路闭环</div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
+  <!-- ====== 底部 CTA ====== -->
   <section class="mx-auto max-w-[85rem] px-4 py-14 sm:px-6 lg:px-8">
     <div class="mx-auto max-w-2xl text-center">
       <h2 class="text-2xl font-bold text-neutral-800 md:text-3xl dark:text-neutral-200">
         先改变老板，才能改变企业
       </h2>
       <p class="mt-3 text-neutral-600 dark:text-neutral-400">
-        使命：带领10万+企业老板走进AI世界，用「定位升级 + 老板AI化」跳出同质化内卷，打造极简组织，实现幸福感创业。
+        带领10万+企业老板走进AI世界，用「定位升级 + 老板AI化」跳出同质化内卷，打造极简组织，实现幸福感创业。
       </p>
-      <div class="mt-8">
+      <div class="mt-8 flex flex-wrap justify-center gap-4">
         <a href="/about" class="inline-flex items-center rounded-lg bg-orange-500 px-8 py-3 text-base font-bold text-white transition hover:bg-orange-600">
           了解 Rex Wang
           <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
         </a>
+        <a href="/blog" class="inline-flex items-center rounded-lg border border-neutral-300 px-8 py-3 text-base font-bold text-neutral-700 transition hover:bg-neutral-100 dark:border-neutral-600 dark:text-neutral-200 dark:hover:bg-neutral-700">
+          阅读博客
+        </a>
       </div>
     </div>
   </section>
+
 </MainLayout>
